@@ -1,0 +1,41 @@
+{
+  "Type": "Variant",
+  "Reference": "Template_Intelligent",
+  "Modify": {
+    "MaxHealth": 30,
+    "ViewSector": 360,
+    "DropList": "Drop_Penguin",
+    "Appearance": "Jar_Bomb",
+    "Weapons": [],
+    "OffHand": [],
+    "MaxSpeed": 8.0,
+    "AttitudeGroup": "Dungeon_Mobs",
+    "ViewRange": 100,
+    "UseCombatActionEvaluator": true,
+    "_CombatConfig": "CAE_Explosive_Mob",
+    "AttackDistance": 1.6,
+    "BlockProbability": 0,
+    "DesiredAttackDistanceRange": [
+      2,
+      2.4
+    ],
+    "CombatAttackPostDelay": [
+      0.1,
+      0.1
+    ],
+    "CombatRelativeTurnSpeed": 0.25,
+    "LeashDistance": 100,
+    "HardLeashDistance": 150,
+    "IsMemory": false,
+    "MemoriesCategory": "Elemental",
+    "NameTranslationKey": {
+      "Compute": "NameTranslationKey"
+    }
+  },
+  "Parameters": {
+    "NameTranslationKey": {
+      "Value": "Jam_Dungeon.npcRoles.Explosive_Mob.name",
+      "Description": "Translation key for NPC name display"
+    }
+  }
+}

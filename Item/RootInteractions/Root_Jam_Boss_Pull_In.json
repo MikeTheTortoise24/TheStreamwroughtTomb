@@ -1,0 +1,12 @@
+{
+  "Interactions": [
+    {
+      "Type": "Simple",
+      "Effects": {
+        "WorldSoundEventId": "SFX_Start_Spin"
+      },
+      "RunTime": 0.5
+    },
+    "Jam_Boss_Pull_In"
+  ]
+}

@@ -1,0 +1,121 @@
+{
+  "Type": "Serial",
+  "Interactions": [
+    {
+      "Type": "Simple",
+      "RunTime": 1.0,
+      "Effects": {
+        "MovementEffects": {
+          "DisableAll": true
+        }
+      }
+    },
+    {
+      "Type": "Simple",
+      "RunTime": 3.0,
+      "Effects": {
+        "WorldSoundEventId": "SFX_Slam_Buildup",
+        "MovementEffects": {
+          "DisableAll": true
+        },
+        "Particles": [
+          {
+            "SystemId": "Slam_AoE",
+            "TargetEntityPart": "Entity",
+            "PositionOffset": {
+              "Y": 0.3
+            },
+            "Scale": 2.3
+          }
+        ]
+      }
+    },
+    {
+      "Type": "Selector",
+      "Selector": {
+        "Id": "AOECircle",
+        "Range": 13
+      },
+      "RunTime": 0.1,
+      "HitEntity": {
+        "Interactions": [
+          "Jam_Boss_Outer_Inner_Damage"
+        ]
+      },
+      "Effects": {
+        "WorldSoundEventId": "SFX_Slam_Impact",
+        "MovementEffects": {
+          "DisableAll": true
+        },
+        "Particles": [
+          {
+            "SystemId": "Explosion_Big",
+            "Scale": 10,
+            "TargetEntityPart": "Entity"
+          }
+        ]
+      }
+    },
+    {
+      "Type": "Simple",
+      "Effects": {
+        "WorldSoundEventId": "SFX_Slam_Buildup",
+        "Particles": [
+          {
+            "SystemId": "Outer_Circle",
+            "TargetEntityPart": "Entity",
+            "PositionOffset": {
+              "Y": 0.3
+            }
+          }
+        ],
+        "MovementEffects": {
+          "DisableAll": true
+        }
+      },
+      "RunTime": 1.5
+    },
+    {
+      "Type": "Selector",
+      "Selector": {
+        "Id": "Horizontal",
+        "Length": 360,
+        "Direction": "ToRight",
+        "StartDistance": 13,
+        "EndDistance": 34,
+        "ExtendTop": 50,
+        "ExtendBottom": 50
+      },
+      "RunTime": 0.1,
+      "Effects": {
+        "WorldSoundEventId": "SFX_Slam_Impact",
+        "MovementEffects": {
+          "DisableAll": true
+        },
+        "Particles": [
+          {
+            "SystemId": "Outer_Circle_Explosion",
+            "PositionOffset": {
+              "Y": 0.3
+            },
+            "TargetEntityPart": "Entity"
+          }
+        ]
+      },
+      "HitEntity": {
+        "Interactions": [
+          "Jam_Boss_Outer_Inner_Damage"
+        ]
+      }
+    },
+    {
+      "Type": "Simple",
+      "RunTime": 1.0,
+      "Effects": {
+        "MovementEffects": {
+          "DisableAll": true
+        }
+      }
+    }
+  ]
+}

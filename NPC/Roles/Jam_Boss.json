@@ -1,0 +1,40 @@
+{
+  "Type": "Variant",
+  "Reference": "Template_Intelligent_Little_Knockback",
+  "Modify": {
+    "MaxHealth": 5000,
+    "ViewSector": 360,
+    "DropList": "Drop_Jam_Boss",
+    "Appearance": "Jam_Boss",
+    "Weapons": [],
+    "OffHand": [],
+    "MaxSpeed": 7.0,
+    "ViewRange": 100,
+    "UseCombatActionEvaluator": true,
+    "_CombatConfig": "CAE_Jam_Boss",
+    "AttackDistance": 3.0,
+    "BlockProbability": 0,
+    "DesiredAttackDistanceRange": [
+      2.8,
+      3.2
+    ],
+    "CombatAttackPostDelay": [
+      0.8,
+      1.5
+    ],
+    "CombatRelativeTurnSpeed": 0.25,
+    "LeashDistance": 100,
+    "HardLeashDistance": 150,
+    "IsMemory": false,
+    "MemoriesCategory": "Elemental",
+    "NameTranslationKey": {
+      "Compute": "NameTranslationKey"
+    }
+  },
+  "Parameters": {
+    "NameTranslationKey": {
+      "Value": "Jam_Dungeon.npcRoles.Great_Clay_Golem.name",
+      "Description": "Translation key for NPC name display"
+    }
+  }
+}

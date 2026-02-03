@@ -1,0 +1,15 @@
+{
+  "Conditions": {
+    "SunLightLevel": {
+      "Min": 10,
+      "Max": 15
+    },
+    "EnvironmentIds": [
+      "Env_Jam_Dungeon"
+    ]
+  },
+  "AmbientBed": {
+    "Volume": -20,
+    "Track": "Sounds/Environments/Jam_Dungeon/Synth_Factory_Music.ogg"
+  }
+}

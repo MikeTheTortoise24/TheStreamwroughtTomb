@@ -1,0 +1,13 @@
+{
+  "Interactions": [
+    "Staff_Dash_Ability"
+  ],
+  "Tags": {
+    "Attack": [
+      "Ranged"
+    ]
+  },
+  "Cooldown": {
+    "Cooldown": 2.0
+  }
+}

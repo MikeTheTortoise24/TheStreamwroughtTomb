@@ -1,0 +1,153 @@
+{
+  "WaterTint": "#02bfcf",
+  "SpawnDensity": 0,
+  "Tags": {
+    "CreativeHub": []
+  },
+  "WeatherForecasts": {
+    "0": [
+      {
+        "WeatherId": "Skylands_Sunny",
+        "Weight": 25
+      }
+    ],
+    "1": [
+      {
+        "WeatherId": "Skylands_Sunny",
+        "Weight": 25
+      }
+    ],
+    "2": [
+      {
+        "WeatherId": "Skylands_Sunny",
+        "Weight": 25
+      }
+    ],
+    "3": [
+      {
+        "WeatherId": "Skylands_Sunny",
+        "Weight": 25
+      }
+    ],
+    "4": [
+      {
+        "WeatherId": "Skylands_Sunny",
+        "Weight": 25
+      }
+    ],
+    "5": [
+      {
+        "WeatherId": "Skylands_Sunny",
+        "Weight": 25
+      }
+    ],
+    "6": [
+      {
+        "WeatherId": "Skylands_Sunny",
+        "Weight": 25
+      }
+    ],
+    "7": [
+      {
+        "WeatherId": "Skylands_Sunny",
+        "Weight": 25
+      }
+    ],
+    "8": [
+      {
+        "WeatherId": "Skylands_Sunny",
+        "Weight": 25
+      }
+    ],
+    "9": [
+      {
+        "WeatherId": "Skylands_Sunny",
+        "Weight": 25
+      }
+    ],
+    "10": [
+      {
+        "WeatherId": "Skylands_Sunny",
+        "Weight": 25
+      }
+    ],
+    "11": [
+      {
+        "WeatherId": "Skylands_Sunny",
+        "Weight": 25
+      }
+    ],
+    "12": [
+      {
+        "WeatherId": "Skylands_Sunny",
+        "Weight": 25
+      }
+    ],
+    "13": [
+      {
+        "WeatherId": "Skylands_Sunny",
+        "Weight": 25
+      }
+    ],
+    "14": [
+      {
+        "WeatherId": "Skylands_Sunny",
+        "Weight": 25
+      }
+    ],
+    "15": [
+      {
+        "WeatherId": "Skylands_Sunny",
+        "Weight": 25
+      }
+    ],
+    "16": [
+      {
+        "WeatherId": "Skylands_Sunny",
+        "Weight": 25
+      }
+    ],
+    "17": [
+      {
+        "WeatherId": "Skylands_Sunny",
+        "Weight": 25
+      }
+    ],
+    "18": [
+      {
+        "WeatherId": "Skylands_Sunny",
+        "Weight": 25
+      }
+    ],
+    "19": [
+      {
+        "WeatherId": "Skylands_Sunny",
+        "Weight": 25
+      }
+    ],
+    "20": [
+      {
+        "WeatherId": "Skylands_Sunny",
+        "Weight": 25
+      }
+    ],
+    "21": [
+      {
+        "WeatherId": "Skylands_Sunny",
+        "Weight": 25
+      }
+    ],
+    "22": [
+      {
+        "WeatherId": "Skylands_Sunny",
+        "Weight": 25
+      }
+    ],
+    "23": [
+      {
+        "WeatherId": "Skylands_Sunny",
+        "Weight": 25
+      }
+    ]
+  }
+}

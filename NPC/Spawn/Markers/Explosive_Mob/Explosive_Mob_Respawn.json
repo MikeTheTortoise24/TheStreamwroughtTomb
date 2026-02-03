@@ -1,0 +1,12 @@
+{
+  "Model": "NPC_Spawn_Marker",
+  "NPCs": [
+    {
+      "Name": "NPC_Explosive_Mob",
+      "Weight": 100,
+      "SpawnAfterGameTime": "P10D"
+    }
+  ],
+  "ManualTrigger": false,
+  "MaxDropHeight": 16
+}

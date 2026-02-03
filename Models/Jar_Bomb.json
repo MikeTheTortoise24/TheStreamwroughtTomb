@@ -1,0 +1,93 @@
+{
+  "Model": "NPC/Jar_Bomb/Models/Jar_Bomb.blockymodel",
+  "Texture": "NPC/Jar_Bomb/Models/Texture_Jar_Bomb.png",
+  "AnimationSets": {
+    "Run": {
+      "Animations": [
+        {
+          "Animation": "NPC/Jar_Bomb/Animations/Run.blockyanim",
+          "Speed": 1.5,
+          "Looping": true,
+          "SoundEventId": "SFX_Bomb_Fuse"
+        }
+      ]
+    },
+    "Walk": {
+      "Animations": [
+        {
+          "Animation": "NPC/Jar_Bomb/Animations/Run.blockyanim",
+          "Looping": true,
+          "SoundEventId": "SFX_Bomb_Fuse"
+        }
+      ]
+    },
+    "Crouch": {
+      "Animations": [
+        {
+          "Animation": "NPC/Jar_Bomb/Animations/Idle.blockyanim",
+          "Speed": 0.5,
+          "Looping": true
+        }
+      ]
+    },
+    "CrouchWalk": {
+      "Animations": [
+        {
+          "Animation": "NPC/Jar_Bomb/Animations/Run.blockyanim",
+          "Looping": true,
+          "Speed": 0.5
+        }
+      ]
+    },
+    "Death": {
+      "Animations": [
+        {
+          "Animation": "NPC/Jar_Bomb/Animations/Death.blockyanim",
+          "Looping": false
+        }
+      ]
+    },
+    "Idle": {
+      "Animations": [
+        {
+          "Animation": "NPC/Jar_Bomb/Animations/Idle.blockyanim",
+          "Speed": 0.5,
+          "Looping": true,
+          "SoundEventId": "SFX_Bomb_Fuse"
+        }
+      ]
+    },
+    "Attack": {
+      "Animations": [
+        {
+          "Animation": "NPC/Jar_Bomb/Animations/Attack.blockyanim"
+        }
+      ]
+    }
+  },
+  "MinScale": 1,
+  "MaxScale": 1,
+  "EyeHeight": 0.5,
+  "HitBox": {
+    "Min": {
+      "X": -0.4,
+      "Y": 0,
+      "Z": -0.4
+    },
+    "Max": {
+      "X": 0.4,
+      "Y": 0.6,
+      "Z": 0.4
+    }
+  },
+  "Particles": [
+    {
+      "SystemId": "Fire_Pit",
+      "TargetEntityPart": "Entity",
+      "PositionOffset": {
+        "Y": 0.5
+      },
+      "Scale": 0.5
+    }
+  ]
+}

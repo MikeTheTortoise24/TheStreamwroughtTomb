@@ -1,0 +1,161 @@
+{
+  "Type": "Parallel",
+  "Effects": {
+    "Particles": [
+      {
+        "SystemId": "Mod_Jam_Steam",
+        "TargetEntityPart": "Entity",
+        "Scale": 10,
+        "DetachedFromModel": true,
+        "PositionOffset": {
+          "Y": 24
+        }
+      }
+    ]
+  },
+  "Interactions": [
+    {
+      "Interactions": [
+        {
+          "Type": "Simple",
+          "RunTime": 1.0
+        },
+        {
+          "Type": "Selector",
+          "Selector": {
+            "Id": "AOECircle",
+            "Range": 30
+          },
+          "HitEntity": {
+            "Interactions": [
+              {
+                "Type": "Replace",
+                "DefaultOk": true,
+                "Var": "Pushback_Force",
+                "DefaultValue": {
+                  "Interactions": [
+                    "Jam_Boss_Pushback_Force_Pull_In"
+                  ]
+                }
+              }
+            ]
+          }
+        },
+        {
+          "Type": "Simple",
+          "RunTime": 2.0
+        },
+        {
+          "Type": "Selector",
+          "Selector": {
+            "Id": "AOECircle",
+            "Range": 30
+          },
+          "HitEntity": {
+            "Interactions": [
+              {
+                "Type": "Replace",
+                "DefaultOk": true,
+                "Var": "Pushback_Force",
+                "DefaultValue": {
+                  "Interactions": [
+                    "Jam_Boss_Pushback_Force_Pull_In"
+                  ]
+                }
+              }
+            ]
+          }
+        },
+        {
+          "Type": "Simple",
+          "RunTime": 2.0
+        },
+        {
+          "Type": "Selector",
+          "Selector": {
+            "Id": "AOECircle",
+            "Range": 30
+          },
+          "HitEntity": {
+            "Interactions": [
+              {
+                "Type": "Replace",
+                "DefaultOk": true,
+                "Var": "Pushback_Force",
+                "DefaultValue": {
+                  "Interactions": [
+                    "Jam_Boss_Pushback_Force_Pull_In"
+                  ]
+                }
+              }
+            ]
+          }
+        },
+        {
+          "Type": "Simple",
+          "RunTime": 2.0
+        },
+        {
+          "Type": "Selector",
+          "Selector": {
+            "Id": "AOECircle",
+            "Range": 30
+          },
+          "HitEntity": {
+            "Interactions": [
+              {
+                "Type": "Replace",
+                "DefaultOk": true,
+                "Var": "Pushback_Force",
+                "DefaultValue": {
+                  "Interactions": [
+                    "Jam_Boss_Pushback_Force_Pull_In"
+                  ]
+                }
+              }
+            ]
+          }
+        },
+        {
+          "Type": "Simple",
+          "RunTime": 4
+        }
+      ]
+    },
+    {
+      "Interactions": [
+        {
+          "Type": "Serial",
+          "Interactions": [
+            {
+              "Type": "Simple",
+              "RunTime": 1.0,
+              "Effects": {
+                "Particles": [
+                  {
+                    "SystemId": "Mod_Jam_Steam",
+                    "TargetEntityPart": "Entity",
+                    "Scale": 10,
+                    "DetachedFromModel": true,
+                    "PositionOffset": {
+                      "Y": 24
+                    }
+                  }
+                ],
+                "ItemAnimationId": "Bite",
+                "ItemPlayerAnimationsId": "Hound_Bleached_Default"
+              }
+            },
+            "Jam_Boss_Spin_Attack",
+            "Jam_Boss_Spin_Attack",
+            {
+              "Type": "Simple",
+              "RunTime": 1.0
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "RunTime": 1.0
+}

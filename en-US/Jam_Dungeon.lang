@@ -1,0 +1,17 @@
+portals.dungeon=The Steamwrought Tomb
+portals.dungeon.description=A world of ancient machinery, thought to be lost to time, guarded by the Scalding Sentinel.
+portals.dungeon.tip3=<color is="#05c09a>Don't get lost in the Scalding Sentinel's \nsmoke screen!</color>
+portals.dungeon.tip2=<color is="#05c09a>Don't stand still.</color>
+portals.dungeon.tip1=<color is="#b80b0b>Recommended for 2+ players.</color>
+portals.dungeon.tip4=<color is="#b80b0b>Adamantite armor and gear inside straight ahead!</color>
+portals.dungeon.tip5=<color is="#b80b0b>Turn around for a portal straight to the boss!</color>
+portals.dungeon.tip6=<color is="#32CD32>Use the Piston Lance's dash to get out of harms \nway and buy yourself some time.</color>
+
+
+items.PortalKey_Jam_Dungeon.name=Fragment: The Steamwrought Tomb - Dungeon (HARD)
+items.PortalKey_Jam_Dungeon.description=Key for the entrance to the Steamwrought Tomb, stock up before attempting!
+
+
+npcRoles.Great_Clay_Golem.name=The Scalding Sentinel
+npcRoles.Pylon.name=The Scalding Sentinel's Pylon
+npcRoles.Explosive_Mob.name=Jar Bomb

@@ -1,0 +1,26 @@
+{
+  "Group": "Adathan",
+  "Name": "The Steamwrought Tomb",
+  "Version": "1.0.0",
+  "Description": "An epic boss fight against The Scalding Sentinel!",
+  "Authors": [
+    {
+      "Name": "Adathan",
+      "Email": "",
+      "Url": "https://www.curseforge.com/members/adathan/projects"
+    },
+    {
+      "Name": "A Very Angry Garden Gnome",
+      "Email": "",
+      "Url": "https://www.curseforge.com/members/averyangrygardengnome/projects"
+    }
+  ],
+  "Website": "",
+  "Dependencies": {},
+  "Main": "com.Adathan.SteamwroughtTomb",
+  "OptionalDependencies": {},
+  "LoadBefore": {},
+  "DisabledByDefault": false,
+  "IncludesAssetPack": true,
+  "SubPlugins": []
+}

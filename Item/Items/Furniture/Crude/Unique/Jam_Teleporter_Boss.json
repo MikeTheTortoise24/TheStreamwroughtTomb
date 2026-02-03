@@ -1,0 +1,79 @@
+{
+  "TranslationProperties": {
+    "Name": "Jam Teleporter Boss"
+  },
+  "ItemLevel": 10,
+  "MaxStack": 10,
+  "Icon": "Icons/ItemsGenerated/Teleporter.png",
+  "Categories": [
+    "Blocks.Rocks"
+  ],
+  "PlayerAnimationsId": "Block",
+  "Set": "Rock_Stone",
+  "BlockType": {
+    "DrawType": "Model",
+    "Group": "Stone",
+    "BlockParticleSetId": "Dust",
+    "Textures": [
+      {
+        "All": "Blocks/Miscellaneous/Editor_Empty_Cube_Texture.png",
+        "Weight": 2
+      }
+    ],
+    "ParticleColor": "#bca511",
+    "BlockSoundSetId": "Cocoon",
+    "Particles": [
+      {
+        "SystemId": "Portal_Ground_Hedera",
+        "Scale": 1,
+        "TargetEntityPart": "Entity",
+        "PositionOffset": {
+          "X": 0,
+          "Z": -2
+        }
+      }
+    ],
+    "Light": {
+      "Color": "#ba0",
+      "Radius": 0
+    },
+    "AmbientSoundEventId": "SFX_Portal_Neutral",
+    "Material": "Solid",
+    "HitboxType": "Portal_ThreexThree_Special",
+    "Opacity": "Transparent",
+    "RequiresAlphaBlending": false,
+    "InteractionHitboxType": "Portal_ThreexThree_Special",
+    "InteractionHint": "Teleport to Boss",
+    "CustomModel": "Items/Projectiles/Projectile.blockymodel",
+    "CustomModelTexture": [
+      {
+        "Texture": "Items/Projectiles/Tornado_Texture.png",
+        "Weight": 1
+      }
+    ],
+    "Interactions": {
+      "Use": {
+        "Interactions": [
+          {
+            "Type": "SimpleCommand",
+            "Command": "tp @a -20 125 51 --pitch 0 --yaw 90 --roll 0",
+            "RunTime": 0.1,
+            "Failed": {
+              "Type": "SimpleCommand",
+              "Command": "tp @a -20 125 51 --pitch 0 --yaw 90 --roll 0"
+            }
+          }
+        ]
+      }
+    },
+    "IgnoreSupportWhenPlaced": true,
+    "SupportsRequiredFor": "Any",
+    "VariantRotation": "All"
+  },
+  "Tags": {
+    "Type": [
+      "Teleporter"
+    ]
+  },
+  "ItemSoundSetId": "ISS_Blocks_Stone"
+}

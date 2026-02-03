@@ -1,0 +1,13 @@
+{
+  "Interactions": [
+    {
+      "Type": "Chaining",
+      "ChainId": "Slashes",
+      "ChainingAllowance": 5,
+      "Next": [
+        "Jam_Boss_Swing_Left",
+        "Jam_Boss_Swing_Right"
+      ]
+    }
+  ]
+}

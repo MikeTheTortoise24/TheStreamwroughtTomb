@@ -1,0 +1,11 @@
+{
+  "Duration": 1000,
+  "DamageResistance": {
+    "Poison": [
+      {
+        "Amount": 1,
+        "CalculationType": "Multiplicative"
+      }
+    ]
+  }
+}

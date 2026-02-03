@@ -1,0 +1,72 @@
+{
+  "Type": "CombatActionEvaluator",
+  "TargetMemoryDuration": 60,
+  "CombatActionEvaluator": {
+    "RunConditions": [
+      {
+        "Type": "TimeSinceLastUsed",
+        "Curve": {
+          "ResponseCurve": "Linear",
+          "XRange": [
+            0,
+            4
+          ]
+        }
+      },
+      {
+        "Type": "Randomiser",
+        "MinValue": 0.9,
+        "MaxValue": 1
+      }
+    ],
+    "ActionSets": {
+      "Default": {
+        "BasicAttacks": {
+          "Randomise": false,
+          "UseProjectedDistance": true,
+          "MaxRange": 1,
+          "Timeout": 0.001,
+          "CooldownRange": [
+            0.001,
+            0.001
+          ],
+          "Attacks": [
+            "Melee_Root"
+          ]
+        },
+        "Actions": [
+          "Explode"
+        ]
+      }
+    },
+    "MinActionUtility": 0.1,
+    "AvailableActions": {
+      "Explode": {
+        "Type": "Ability",
+        "Description": "Explodes when they get too close to the player.",
+        "Conditions": [
+          {
+            "Type": "TimeSinceLastUsed",
+            "Curve": {
+              "Type": "Switch",
+              "SwitchPoint": 1
+            }
+          }
+        ],
+        "Target": "Hostile",
+        "AttackDistanceRange": [
+          0,
+          1.6
+        ],
+        "Ability": {
+          "Interactions": [
+            "Explosive_Mob_Explode"
+          ]
+        },
+        "WeightCoefficient": 1.5
+      }
+    },
+    "MinRunUtility": 0.5
+  },
+  "EntityEffect": "Dont_Hurt_Friends"
+}

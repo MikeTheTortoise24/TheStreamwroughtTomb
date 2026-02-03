@@ -1,0 +1,25 @@
+{
+  "Type": "DamageEntity",
+  "DamageEffects": {
+    "Knockback": {
+      "Type": "Force",
+      "VelocityConfig": {
+        "Style": "Exp",
+        "Threshold": 2,
+        "AirResistanceMax": 0.75,
+        "AirResistance": 0.75
+      },
+      "Direction": {
+        "Z": 1
+      },
+      "Force": 5,
+      "Duration": 2,
+      "VelocityType": "Add"
+    }
+  },
+  "DamageCalculator": {
+    "BaseDamage": {
+      "Elemental": 0
+    }
+  }
+}

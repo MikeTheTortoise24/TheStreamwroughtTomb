@@ -1,0 +1,40 @@
+{
+  "Type": "Ability",
+  "Conditions": [
+    {
+      "Type": "TimeSinceLastUsed",
+      "Curve": {
+        "Type": "Switch",
+        "SwitchPoint": 50
+      }
+    },
+    {
+      "Type": "OwnStatAbsolute",
+      "Stat": "Health",
+      "Curve": {
+        "Type": "Switch",
+        "SwitchPoint": 4500,
+        "InitialState": 1,
+        "FinalState": 0
+      }
+    }
+  ],
+  "Target": "Hostile",
+  "AttackDistanceRange": [
+    0,
+    25
+  ],
+  "WeightCoefficient": 1.5,
+  "InteractionVars": {
+    "Melee_Damage": {
+      "Interactions": [
+        "Jam_Boss_Spin_Damage"
+      ]
+    }
+  },
+  "PostExecuteDistanceRange": [
+    2.5,
+    3.0
+  ],
+  "Ability": "Root_Jam_Boss_Pull_In"
+}

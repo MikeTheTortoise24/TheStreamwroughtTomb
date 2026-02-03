@@ -1,0 +1,18 @@
+{
+  "Layers": [
+    {
+      "Files": [
+        "Sounds/Jam_Boss_SFX/SFX_Steam_Released_Trimmed.ogg"
+      ],
+      "RandomSettings": {
+        "MinVolume": -0.9151498112135024,
+        "MinPitch": -1.8240371213405997
+      }
+    }
+  ],
+  "PreventSoundInterruption": true,
+  "Volume": 4.0617997398388725,
+  "AudioCategory": "AudioCat_NPC_Eye_Void",
+  "Parent": "SFX_Attn_Moderate",
+  "MaxDistance": 40
+}

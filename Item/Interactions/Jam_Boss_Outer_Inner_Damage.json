@@ -1,0 +1,19 @@
+{
+  "Type": "DamageEntity",
+  "Effects": {
+    "CameraEffect": "Impact_Strong"
+  },
+  "DamageEffects": {
+    "WorldSoundEventId": "SFX_Player_Hurt_Burn",
+    "WorldParticles": [
+      {
+        "SystemId": "Effect_Fire"
+      }
+    ]
+  },
+  "DamageCalculator": {
+    "BaseDamage": {
+      "Fire": 45
+    }
+  }
+}

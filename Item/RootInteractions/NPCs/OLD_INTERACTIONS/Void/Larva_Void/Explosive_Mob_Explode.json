@@ -1,0 +1,10 @@
+{
+  "Interactions": [
+    "Explosive_Mob_Explode"
+  ],
+  "Tags": {
+    "Attack": [
+      "Melee"
+    ]
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "Model": "Items/Weapons/Staff/Adamantite.blockymodel",
+  "HitBox": {
+    "Min": {
+      "X": -1,
+      "Y": 0,
+      "Z": -1
+    },
+    "Max": {
+      "X": 1,
+      "Y": 1,
+      "Z": 1
+    }
+  },
+  "EyeHeight": 0.5,
+  "Texture": "Items/Weapons/Staff/Adamantite_Texture.png"
+}

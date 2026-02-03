@@ -1,0 +1,12 @@
+{
+  "Model": "NPC_Spawn_Marker",
+  "NPCs": [
+    {
+      "Name": "NPC_Pylon",
+      "Weight": 100,
+      "SpawnAfterGameTime": "P10D"
+    }
+  ],
+  "ManualTrigger": true,
+  "MaxDropHeight": 16
+}

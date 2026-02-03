@@ -1,0 +1,612 @@
+{
+  "Type": "Simple",
+  "Effects": {
+    "ItemPlayerAnimationsId": "Golem_Crystal_Earth_Default",
+    "ItemAnimationId": "SpinHeavy",
+    "WorldSoundEventId": "SFX_Steam_Vent_Spin_Attack",
+    "Particles": [
+      {
+        "SystemId": "Mod_Jam_SpinStart",
+        "TargetEntityPart": "Entity",
+        "PositionOffset": {
+          "Y": 3.0
+        },
+        "Scale": 5,
+        "TargetNodeName": "",
+        "Color": "#868686"
+      }
+    ]
+  },
+  "$Comment": "Prepare Delay",
+  "RunTime": 1,
+  "Next": {
+    "Type": "Parallel",
+    "$Comment": "Make sure this parallel interaction is needed and can't be optimized away",
+    "Interactions": [
+      {
+        "Interactions": [
+          {
+            "Type": "Selector",
+            "$Comment": "Length of Combat",
+            "RunTime": 0.25,
+            "Selector": {
+              "Id": "AOECylinder",
+              "Range": 5,
+              "Height": 5
+            },
+            "Next": {
+              "Type": "Selector",
+              "$Comment": "Length of Combat",
+              "RunTime": 0.25,
+              "Selector": {
+                "Id": "AOECylinder",
+                "Range": 5,
+                "Height": 5
+              },
+              "Next": {
+                "Type": "Selector",
+                "$Comment": "Length of Combat",
+                "RunTime": 0.25,
+                "Selector": {
+                  "Id": "AOECylinder",
+                  "Range": 5,
+                  "Height": 5
+                },
+                "Next": {
+                  "Type": "Selector",
+                  "$Comment": "Length of Combat",
+                  "RunTime": 0.25,
+                  "Selector": {
+                    "Id": "AOECylinder",
+                    "Range": 5,
+                    "Height": 5
+                  },
+                  "Next": {
+                    "Type": "Selector",
+                    "$Comment": "Length of Combat",
+                    "RunTime": 0.25,
+                    "Selector": {
+                      "Id": "AOECylinder",
+                      "Range": 5,
+                      "Height": 5
+                    },
+                    "Next": {
+                      "Type": "Parallel",
+                      "$Comment": "Make sure this parallel interaction is needed and can't be optimized away",
+                      "Interactions": [
+                        {
+                          "Interactions": [
+                            {
+                              "Type": "Selector",
+                              "$Comment": "Length of Combat",
+                              "RunTime": 0.25,
+                              "Selector": {
+                                "Id": "AOECylinder",
+                                "Range": 5,
+                                "Height": 5
+                              },
+                              "Next": {
+                                "Type": "Selector",
+                                "$Comment": "Length of Combat",
+                                "RunTime": 0.25,
+                                "Selector": {
+                                  "Id": "AOECylinder",
+                                  "Range": 5,
+                                  "Height": 5
+                                },
+                                "Next": {
+                                  "Type": "Selector",
+                                  "$Comment": "Length of Combat",
+                                  "RunTime": 0.25,
+                                  "Selector": {
+                                    "Id": "AOECylinder",
+                                    "Range": 5,
+                                    "Height": 5
+                                  },
+                                  "Next": {
+                                    "Type": "Selector",
+                                    "$Comment": "Length of Combat",
+                                    "RunTime": 0.25,
+                                    "Selector": {
+                                      "Id": "AOECylinder",
+                                      "Range": 5,
+                                      "Height": 5
+                                    },
+                                    "Next": {
+                                      "Type": "Selector",
+                                      "$Comment": "Length of Combat",
+                                      "RunTime": 0.25,
+                                      "Selector": {
+                                        "Id": "AOECylinder",
+                                        "Range": 5,
+                                        "Height": 5
+                                      },
+                                      "HitEntity": {
+                                        "Interactions": [
+                                          {
+                                            "Type": "Replace",
+                                            "DefaultValue": {
+                                              "Interactions": [
+                                                "NPC_Attack_Melee_Damage"
+                                              ]
+                                            },
+                                            "Var": "Melee_Damage"
+                                          }
+                                        ]
+                                      },
+                                      "Effects": {
+                                        "Particles": [
+                                          {
+                                            "SystemId": "Jam_Boss_Spin",
+                                            "TargetEntityPart": "Entity",
+                                            "PositionOffset": {
+                                              "Y": 3.0
+                                            }
+                                          }
+                                        ]
+                                      },
+                                      "Next": {
+                                        "Type": "Parallel",
+                                        "$Comment": "Make sure this parallel interaction is needed and can't be optimized away",
+                                        "Interactions": [
+                                          {
+                                            "Interactions": [
+                                              {
+                                                "Type": "Selector",
+                                                "$Comment": "Length of Combat",
+                                                "RunTime": 0.25,
+                                                "Selector": {
+                                                  "Id": "AOECylinder",
+                                                  "Range": 5,
+                                                  "Height": 5
+                                                },
+                                                "Next": {
+                                                  "Type": "Selector",
+                                                  "$Comment": "Length of Combat",
+                                                  "RunTime": 0.25,
+                                                  "Selector": {
+                                                    "Id": "AOECylinder",
+                                                    "Range": 5,
+                                                    "Height": 5
+                                                  },
+                                                  "Next": {
+                                                    "Type": "Selector",
+                                                    "$Comment": "Length of Combat",
+                                                    "RunTime": 0.25,
+                                                    "Selector": {
+                                                      "Id": "AOECylinder",
+                                                      "Range": 5,
+                                                      "Height": 5
+                                                    },
+                                                    "Next": {
+                                                      "Type": "Selector",
+                                                      "$Comment": "Length of Combat",
+                                                      "RunTime": 0.25,
+                                                      "Selector": {
+                                                        "Id": "AOECylinder",
+                                                        "Range": 5,
+                                                        "Height": 5
+                                                      },
+                                                      "Next": {
+                                                        "Type": "Selector",
+                                                        "$Comment": "Length of Combat",
+                                                        "RunTime": 0.25,
+                                                        "Selector": {
+                                                          "Id": "AOECylinder",
+                                                          "Range": 5,
+                                                          "Height": 5
+                                                        },
+                                                        "HitEntity": {
+                                                          "Interactions": [
+                                                            {
+                                                              "Type": "Replace",
+                                                              "DefaultValue": {
+                                                                "Interactions": [
+                                                                  "NPC_Attack_Melee_Damage"
+                                                                ]
+                                                              },
+                                                              "Var": "Melee_Damage"
+                                                            }
+                                                          ]
+                                                        },
+                                                        "Effects": {
+                                                          "Particles": [
+                                                            {
+                                                              "SystemId": "Jam_Boss_Spin",
+                                                              "TargetEntityPart": "Entity",
+                                                              "PositionOffset": {
+                                                                "Y": 3.0
+                                                              },
+                                                              "Scale": 2
+                                                            }
+                                                          ]
+                                                        }
+                                                      },
+                                                      "HitEntity": {
+                                                        "Interactions": [
+                                                          {
+                                                            "Type": "Replace",
+                                                            "DefaultValue": {
+                                                              "Interactions": [
+                                                                "NPC_Attack_Melee_Damage"
+                                                              ]
+                                                            },
+                                                            "Var": "Melee_Damage"
+                                                          }
+                                                        ]
+                                                      },
+                                                      "Effects": {
+                                                        "Particles": [
+                                                          {
+                                                            "SystemId": "Jam_Boss_Spin",
+                                                            "TargetEntityPart": "Entity",
+                                                            "PositionOffset": {
+                                                              "Y": 3.0
+                                                            },
+                                                            "Scale": 2
+                                                          }
+                                                        ]
+                                                      }
+                                                    },
+                                                    "HitEntity": {
+                                                      "Interactions": [
+                                                        {
+                                                          "Type": "Replace",
+                                                          "DefaultValue": {
+                                                            "Interactions": [
+                                                              "NPC_Attack_Melee_Damage"
+                                                            ]
+                                                          },
+                                                          "Var": "Melee_Damage"
+                                                        }
+                                                      ]
+                                                    },
+                                                    "Effects": {
+                                                      "Particles": [
+                                                        {
+                                                          "SystemId": "Jam_Boss_Spin",
+                                                          "TargetEntityPart": "Entity",
+                                                          "PositionOffset": {
+                                                            "Y": 3.0
+                                                          },
+                                                          "Scale": 2
+                                                        }
+                                                      ]
+                                                    }
+                                                  },
+                                                  "HitEntity": {
+                                                    "Interactions": [
+                                                      {
+                                                        "Type": "Replace",
+                                                        "DefaultValue": {
+                                                          "Interactions": [
+                                                            "NPC_Attack_Melee_Damage"
+                                                          ]
+                                                        },
+                                                        "Var": "Melee_Damage"
+                                                      }
+                                                    ]
+                                                  },
+                                                  "Effects": {
+                                                    "Particles": [
+                                                      {
+                                                        "SystemId": "Jam_Boss_Spin",
+                                                        "TargetEntityPart": "Entity",
+                                                        "PositionOffset": {
+                                                          "Y": 3.0
+                                                        },
+                                                        "Scale": 2
+                                                      }
+                                                    ]
+                                                  }
+                                                },
+                                                "HitEntity": {
+                                                  "Interactions": [
+                                                    {
+                                                      "Type": "Replace",
+                                                      "DefaultValue": {
+                                                        "Interactions": [
+                                                          "NPC_Attack_Melee_Damage"
+                                                        ]
+                                                      },
+                                                      "Var": "Melee_Damage"
+                                                    }
+                                                  ]
+                                                },
+                                                "Effects": {
+                                                  "Particles": [
+                                                    {
+                                                      "SystemId": "Jam_Boss_Spin",
+                                                      "TargetEntityPart": "Entity",
+                                                      "PositionOffset": {
+                                                        "Y": 3.0
+                                                      },
+                                                      "Scale": 2
+                                                    }
+                                                  ]
+                                                }
+                                              }
+                                            ]
+                                          },
+                                          {
+                                            "Interactions": [
+                                              {
+                                                "Type": "Simple",
+                                                "$Comment": "Length of Effect",
+                                                "RunTime": 2.75,
+                                                "Effects": {
+                                                  "WorldSoundEventId": "SFX_Battleaxe_T2_Swing_Charged"
+                                                }
+                                              }
+                                            ]
+                                          }
+                                        ]
+                                      }
+                                    },
+                                    "HitEntity": {
+                                      "Interactions": [
+                                        {
+                                          "Type": "Replace",
+                                          "DefaultValue": {
+                                            "Interactions": [
+                                              "NPC_Attack_Melee_Damage"
+                                            ]
+                                          },
+                                          "Var": "Melee_Damage"
+                                        }
+                                      ]
+                                    },
+                                    "Effects": {
+                                      "Particles": [
+                                        {
+                                          "SystemId": "Jam_Boss_Spin",
+                                          "TargetEntityPart": "Entity",
+                                          "PositionOffset": {
+                                            "Y": 3.0
+                                          },
+                                          "Scale": 2
+                                        }
+                                      ]
+                                    }
+                                  },
+                                  "HitEntity": {
+                                    "Interactions": [
+                                      {
+                                        "Type": "Replace",
+                                        "DefaultValue": {
+                                          "Interactions": [
+                                            "NPC_Attack_Melee_Damage"
+                                          ]
+                                        },
+                                        "Var": "Melee_Damage"
+                                      }
+                                    ]
+                                  },
+                                  "Effects": {
+                                    "Particles": [
+                                      {
+                                        "SystemId": "Jam_Boss_Spin",
+                                        "TargetEntityPart": "Entity",
+                                        "PositionOffset": {
+                                          "Y": 3.0
+                                        },
+                                        "Scale": 2
+                                      }
+                                    ]
+                                  }
+                                },
+                                "HitEntity": {
+                                  "Interactions": [
+                                    {
+                                      "Type": "Replace",
+                                      "DefaultValue": {
+                                        "Interactions": [
+                                          "NPC_Attack_Melee_Damage"
+                                        ]
+                                      },
+                                      "Var": "Melee_Damage"
+                                    }
+                                  ]
+                                },
+                                "Effects": {
+                                  "Particles": [
+                                    {
+                                      "SystemId": "Jam_Boss_Spin",
+                                      "TargetEntityPart": "Entity",
+                                      "PositionOffset": {
+                                        "Y": 3.0
+                                      },
+                                      "Scale": 2
+                                    }
+                                  ]
+                                }
+                              },
+                              "HitEntity": {
+                                "Interactions": [
+                                  {
+                                    "Type": "Replace",
+                                    "DefaultValue": {
+                                      "Interactions": [
+                                        "NPC_Attack_Melee_Damage"
+                                      ]
+                                    },
+                                    "Var": "Melee_Damage"
+                                  }
+                                ]
+                              },
+                              "Effects": {
+                                "Particles": [
+                                  {
+                                    "SystemId": "Jam_Boss_Spin",
+                                    "TargetEntityPart": "Entity",
+                                    "PositionOffset": {
+                                      "Y": 3.0
+                                    },
+                                    "Scale": 2
+                                  }
+                                ]
+                              }
+                            }
+                          ]
+                        },
+                        {
+                          "Interactions": [
+                            {
+                              "Type": "Simple",
+                              "$Comment": "Length of Effect",
+                              "RunTime": 2.75,
+                              "Effects": {
+                                "WorldSoundEventId": "SFX_Battleaxe_T2_Swing_Charged"
+                              }
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    "HitEntity": {
+                      "Interactions": [
+                        {
+                          "Type": "Replace",
+                          "DefaultValue": {
+                            "Interactions": [
+                              "NPC_Attack_Melee_Damage"
+                            ]
+                          },
+                          "Var": "Melee_Damage"
+                        }
+                      ]
+                    },
+                    "Effects": {
+                      "Particles": [
+                        {
+                          "SystemId": "Jam_Boss_Spin",
+                          "TargetEntityPart": "Entity",
+                          "PositionOffset": {
+                            "Y": 3.0
+                          },
+                          "Scale": 2
+                        }
+                      ]
+                    }
+                  },
+                  "HitEntity": {
+                    "Interactions": [
+                      {
+                        "Type": "Replace",
+                        "DefaultValue": {
+                          "Interactions": [
+                            "NPC_Attack_Melee_Damage"
+                          ]
+                        },
+                        "Var": "Melee_Damage"
+                      }
+                    ]
+                  },
+                  "Effects": {
+                    "Particles": [
+                      {
+                        "SystemId": "Jam_Boss_Spin",
+                        "TargetEntityPart": "Entity",
+                        "PositionOffset": {
+                          "Y": 3.0
+                        },
+                        "Scale": 2
+                      }
+                    ]
+                  }
+                },
+                "HitEntity": {
+                  "Interactions": [
+                    {
+                      "Type": "Replace",
+                      "DefaultValue": {
+                        "Interactions": [
+                          "NPC_Attack_Melee_Damage"
+                        ]
+                      },
+                      "Var": "Melee_Damage"
+                    }
+                  ]
+                },
+                "Effects": {
+                  "Particles": [
+                    {
+                      "SystemId": "Jam_Boss_Spin",
+                      "TargetEntityPart": "Entity",
+                      "PositionOffset": {
+                        "Y": 3.0
+                      },
+                      "Scale": 2
+                    }
+                  ]
+                }
+              },
+              "HitEntity": {
+                "Interactions": [
+                  {
+                    "Type": "Replace",
+                    "DefaultValue": {
+                      "Interactions": [
+                        "NPC_Attack_Melee_Damage"
+                      ]
+                    },
+                    "Var": "Melee_Damage"
+                  }
+                ]
+              },
+              "Effects": {
+                "Particles": [
+                  {
+                    "SystemId": "Jam_Boss_Spin",
+                    "TargetEntityPart": "Entity",
+                    "PositionOffset": {
+                      "Y": 3.0
+                    },
+                    "Scale": 2
+                  }
+                ]
+              }
+            },
+            "HitEntity": {
+              "Interactions": [
+                {
+                  "Type": "Replace",
+                  "DefaultValue": {
+                    "Interactions": [
+                      "NPC_Attack_Melee_Damage"
+                    ]
+                  },
+                  "Var": "Melee_Damage"
+                }
+              ]
+            },
+            "Effects": {
+              "Particles": [
+                {
+                  "SystemId": "Jam_Boss_Spin",
+                  "TargetEntityPart": "Entity",
+                  "PositionOffset": {
+                    "Y": 3.0
+                  },
+                  "Scale": 2
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "Interactions": [
+          {
+            "Type": "Simple",
+            "$Comment": "Length of Effect",
+            "RunTime": 2.75,
+            "Effects": {
+              "WorldSoundEventId": "SFX_Battleaxe_T2_Swing_Charged"
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

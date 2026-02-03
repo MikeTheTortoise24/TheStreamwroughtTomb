@@ -1,0 +1,50 @@
+{
+  "Type": "Ability",
+  "Conditions": [
+    {
+      "Type": "TimeSinceLastUsed",
+      "Curve": {
+        "Type": "Default",
+        "XRange": [
+          0,
+          40
+        ],
+        "ResponseCurve": "Linear"
+      }
+    },
+    {
+      "Type": "OwnStatAbsolute",
+      "Stat": "Health",
+      "Curve": {
+        "Type": "Switch",
+        "SwitchPoint": 2500,
+        "InitialState": 1,
+        "FinalState": 0
+      }
+    },
+    {
+      "Type": "TargetDistance",
+      "Curve": {
+        "Type": "Switch",
+        "SwitchPoint": 10,
+        "InitialState": 1,
+        "FinalState": 0
+      }
+    }
+  ],
+  "Target": "Hostile",
+  "AttackDistanceRange": [
+    0,
+    25
+  ],
+  "WeightCoefficient": 1.5,
+  "PostExecuteDistanceRange": [
+    2.5,
+    3.0
+  ],
+  "Ability": {
+    "Interactions": [
+      "Jam_Boss_Outer_Inner_Circles"
+    ]
+  }
+}

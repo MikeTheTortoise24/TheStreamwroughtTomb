@@ -1,0 +1,24 @@
+{
+  "Duration": 5,
+  "DamageResistance": {
+    "Physical": [
+      {
+        "Amount": 1,
+        "CalculationType": "Multiplicative"
+      }
+    ],
+    "Projectile": [
+      {
+        "Amount": 1,
+        "CalculationType": "Multiplicative"
+      }
+    ],
+    "Slashing": [
+      {
+        "Amount": 1,
+        "CalculationType": "Multiplicative"
+      }
+    ]
+  },
+  "OverlapBehavior": "Overwrite"
+}

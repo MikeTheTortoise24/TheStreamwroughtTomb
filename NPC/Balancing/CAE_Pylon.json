@@ -1,0 +1,476 @@
+{
+  "Type": "CombatActionEvaluator",
+  "TargetMemoryDuration": 60,
+  "CombatActionEvaluator": {
+    "RunConditions": [
+      {
+        "Type": "TimeSinceLastUsed",
+        "Curve": {
+          "ResponseCurve": "Linear",
+          "XRange": [
+            0,
+            4
+          ]
+        }
+      },
+      {
+        "Type": "Randomiser",
+        "MinValue": 0.9,
+        "MaxValue": 1
+      }
+    ],
+    "ActionSets": {
+      "Default": {
+        "BasicAttacks": {
+          "Randomise": false,
+          "UseProjectedDistance": true,
+          "MaxRange": 1,
+          "Timeout": 0.001,
+          "CooldownRange": [
+            0.001,
+            0.001
+          ],
+          "Attacks": [
+            "Melee_Root"
+          ]
+        },
+        "Actions": [
+          "AOE",
+          "SpawnExplosiveMob"
+        ]
+      }
+    },
+    "MinActionUtility": 0.1,
+    "AvailableActions": {
+      "AOE": {
+        "Type": "Ability",
+        "Conditions": [
+          {
+            "Type": "TimeSinceLastUsed",
+            "Curve": {
+              "Type": "Switch",
+              "SwitchPoint": 1
+            }
+          }
+        ],
+        "Description": "Spawns an AOE around the pylon that gets bigger over time, player must jump over it.",
+        "Target": "Hostile",
+        "AttackDistanceRange": [
+          0,
+          50
+        ],
+        "Ability": {
+          "Interactions": [
+            {
+              "Type": "Serial",
+              "Interactions": [
+                {
+                  "Type": "Simple",
+                  "Effects": {
+                    "WorldSoundEventId": "SFX_Pylon_Attack",
+                    "Particles": [
+                      {
+                        "TargetEntityPart": "Entity",
+                        "SystemId": "Pylon_AOE_Ring",
+                        "DetachedFromModel": true,
+                        "Scale": 3,
+                        "PositionOffset": {
+                          "Y": -0.9
+                        }
+                      }
+                    ]
+                  }
+                },
+                {
+                  "Type": "Selector",
+                  "Selector": {
+                    "Id": "Horizontal",
+                    "Length": 360,
+                    "Direction": "ToRight",
+                    "EndDistance": 1,
+                    "ExtendTop": 1,
+                    "ExtendBottom": 1,
+                    "PitchOffset": -10
+                  },
+                  "HitEntity": {
+                    "Interactions": [
+                      {
+                        "Type": "Replace",
+                        "DefaultOk": true,
+                        "Var": "Pylon_Damage",
+                        "DefaultValue": "Root_Pylon_AOE_Damage"
+                      }
+                    ]
+                  },
+                  "IgnoreOwner": true,
+                  "RunTime": 0.1
+                },
+                {
+                  "Type": "Simple",
+                  "RunTime": 0.25
+                },
+                {
+                  "Type": "Selector",
+                  "Selector": {
+                    "Id": "Horizontal",
+                    "Length": 360,
+                    "Direction": "ToRight",
+                    "EndDistance": 1.5,
+                    "ExtendTop": 1,
+                    "ExtendBottom": 1,
+                    "StartDistance": 0.5,
+                    "PitchOffset": -10
+                  },
+                  "HitEntity": {
+                    "Interactions": [
+                      {
+                        "Type": "Replace",
+                        "DefaultOk": true,
+                        "Var": "Pylon_Damage",
+                        "DefaultValue": "Root_Pylon_AOE_Damage"
+                      }
+                    ]
+                  },
+                  "IgnoreOwner": true,
+                  "RunTime": 0.1
+                },
+                {
+                  "Type": "Simple",
+                  "RunTime": 0.25
+                },
+                {
+                  "Type": "Selector",
+                  "Selector": {
+                    "Id": "Horizontal",
+                    "Length": 360,
+                    "Direction": "ToRight",
+                    "EndDistance": 2,
+                    "ExtendTop": 0.5,
+                    "ExtendBottom": 1,
+                    "StartDistance": 1.5,
+                    "PitchOffset": -10
+                  },
+                  "HitEntity": {
+                    "Interactions": [
+                      {
+                        "Type": "Replace",
+                        "DefaultOk": true,
+                        "Var": "Pylon_Damage",
+                        "DefaultValue": "Root_Pylon_AOE_Damage"
+                      }
+                    ]
+                  },
+                  "IgnoreOwner": true,
+                  "RunTime": 0.1
+                },
+                {
+                  "Type": "Simple",
+                  "RunTime": 0.25
+                },
+                {
+                  "Type": "Selector",
+                  "Selector": {
+                    "Id": "Horizontal",
+                    "Length": 360,
+                    "Direction": "ToRight",
+                    "EndDistance": 2.5,
+                    "ExtendTop": 0.5,
+                    "ExtendBottom": 1,
+                    "StartDistance": 2.0,
+                    "PitchOffset": -10
+                  },
+                  "HitEntity": {
+                    "Interactions": [
+                      {
+                        "Type": "Replace",
+                        "DefaultOk": true,
+                        "Var": "Pylon_Damage",
+                        "DefaultValue": "Root_Pylon_AOE_Damage"
+                      }
+                    ]
+                  },
+                  "IgnoreOwner": true,
+                  "RunTime": 0.1
+                },
+                {
+                  "Type": "Simple",
+                  "RunTime": 0.25
+                },
+                {
+                  "Type": "Selector",
+                  "Selector": {
+                    "Id": "Horizontal",
+                    "Length": 360,
+                    "Direction": "ToRight",
+                    "EndDistance": 3.2,
+                    "ExtendTop": 0.5,
+                    "ExtendBottom": 1,
+                    "StartDistance": 2.7,
+                    "PitchOffset": -10
+                  },
+                  "HitEntity": {
+                    "Interactions": [
+                      {
+                        "Type": "Replace",
+                        "DefaultOk": true,
+                        "Var": "Pylon_Damage",
+                        "DefaultValue": "Root_Pylon_AOE_Damage"
+                      }
+                    ]
+                  },
+                  "IgnoreOwner": true,
+                  "RunTime": 0.1
+                },
+                {
+                  "Type": "Simple",
+                  "RunTime": 0.25
+                },
+                {
+                  "Type": "Selector",
+                  "Selector": {
+                    "Id": "Horizontal",
+                    "Length": 360,
+                    "Direction": "ToRight",
+                    "EndDistance": 3.8,
+                    "ExtendTop": 0.5,
+                    "ExtendBottom": 1,
+                    "StartDistance": 3.3,
+                    "PitchOffset": -10
+                  },
+                  "HitEntity": {
+                    "Interactions": [
+                      {
+                        "Type": "Replace",
+                        "DefaultOk": true,
+                        "Var": "Pylon_Damage",
+                        "DefaultValue": "Root_Pylon_AOE_Damage"
+                      }
+                    ]
+                  },
+                  "IgnoreOwner": true,
+                  "RunTime": 0.1
+                },
+                {
+                  "Type": "Simple",
+                  "RunTime": 0.25
+                },
+                {
+                  "Type": "Selector",
+                  "Selector": {
+                    "Id": "Horizontal",
+                    "Length": 360,
+                    "Direction": "ToRight",
+                    "EndDistance": 4.4,
+                    "ExtendTop": 0.5,
+                    "ExtendBottom": 1,
+                    "StartDistance": 3.9,
+                    "PitchOffset": -10
+                  },
+                  "HitEntity": {
+                    "Interactions": [
+                      {
+                        "Type": "Replace",
+                        "DefaultOk": true,
+                        "Var": "Pylon_Damage",
+                        "DefaultValue": "Root_Pylon_AOE_Damage"
+                      }
+                    ]
+                  },
+                  "IgnoreOwner": true,
+                  "RunTime": 0.1
+                },
+                {
+                  "Type": "Simple",
+                  "RunTime": 0.25
+                },
+                {
+                  "Type": "Selector",
+                  "Selector": {
+                    "Id": "Horizontal",
+                    "Length": 360,
+                    "Direction": "ToRight",
+                    "EndDistance": 5.1,
+                    "ExtendTop": 0.5,
+                    "ExtendBottom": 1,
+                    "StartDistance": 4.0,
+                    "PitchOffset": -10
+                  },
+                  "HitEntity": {
+                    "Interactions": [
+                      {
+                        "Type": "Replace",
+                        "DefaultOk": true,
+                        "Var": "Pylon_Damage",
+                        "DefaultValue": "Root_Pylon_AOE_Damage"
+                      }
+                    ]
+                  },
+                  "IgnoreOwner": true,
+                  "RunTime": 0.1
+                },
+                {
+                  "Type": "Simple",
+                  "RunTime": 0.25
+                },
+                {
+                  "Type": "Selector",
+                  "Selector": {
+                    "Id": "Horizontal",
+                    "Length": 360,
+                    "Direction": "ToRight",
+                    "EndDistance": 5.6,
+                    "ExtendTop": 0.5,
+                    "ExtendBottom": 1,
+                    "StartDistance": 4.7,
+                    "PitchOffset": -10
+                  },
+                  "HitEntity": {
+                    "Interactions": [
+                      {
+                        "Type": "Replace",
+                        "DefaultOk": true,
+                        "Var": "Pylon_Damage",
+                        "DefaultValue": "Root_Pylon_AOE_Damage"
+                      }
+                    ]
+                  },
+                  "IgnoreOwner": true,
+                  "RunTime": 0.1
+                },
+                {
+                  "Type": "Simple",
+                  "RunTime": 0.25
+                },
+                {
+                  "Type": "Selector",
+                  "Selector": {
+                    "Id": "Horizontal",
+                    "Length": 360,
+                    "Direction": "ToRight",
+                    "EndDistance": 6,
+                    "ExtendTop": 0.5,
+                    "ExtendBottom": 1,
+                    "StartDistance": 5.0,
+                    "PitchOffset": -10
+                  },
+                  "HitEntity": {
+                    "Interactions": [
+                      {
+                        "Type": "Replace",
+                        "DefaultOk": true,
+                        "Var": "Pylon_Damage",
+                        "DefaultValue": "Root_Pylon_AOE_Damage"
+                      }
+                    ]
+                  },
+                  "IgnoreOwner": true,
+                  "RunTime": 0.1
+                },
+                {
+                  "Type": "Simple",
+                  "RunTime": 0.25
+                },
+                {
+                  "Type": "Selector",
+                  "Selector": {
+                    "Id": "Horizontal",
+                    "Length": 360,
+                    "Direction": "ToRight",
+                    "EndDistance": 6.5,
+                    "ExtendTop": 0.5,
+                    "ExtendBottom": 1,
+                    "StartDistance": 5.7,
+                    "PitchOffset": -10
+                  },
+                  "HitEntity": {
+                    "Interactions": [
+                      {
+                        "Type": "Replace",
+                        "DefaultOk": true,
+                        "Var": "Pylon_Damage",
+                        "DefaultValue": "Root_Pylon_AOE_Damage"
+                      }
+                    ]
+                  },
+                  "IgnoreOwner": true,
+                  "RunTime": 0.1
+                },
+                {
+                  "Type": "Simple",
+                  "RunTime": 0.25
+                },
+                {
+                  "Type": "Selector",
+                  "Selector": {
+                    "Id": "Horizontal",
+                    "Length": 360,
+                    "Direction": "ToRight",
+                    "EndDistance": 7,
+                    "ExtendTop": 0.5,
+                    "ExtendBottom": 1,
+                    "StartDistance": 6.0,
+                    "PitchOffset": -10
+                  },
+                  "HitEntity": {
+                    "Interactions": [
+                      {
+                        "Type": "Replace",
+                        "DefaultOk": true,
+                        "Var": "Pylon_Damage",
+                        "DefaultValue": "Root_Pylon_AOE_Damage"
+                      }
+                    ]
+                  },
+                  "IgnoreOwner": true,
+                  "RunTime": 0.1
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "SpawnExplosiveMob": {
+        "Type": "Ability",
+        "Description": "Spawns a mob at the pylon which targets the player and explodes on contact.",
+        "Conditions": [
+          {
+            "Type": "TimeSinceLastUsed",
+            "Curve": {
+              "Type": "Switch",
+              "SwitchPoint": 10
+            }
+          }
+        ],
+        "Target": "Hostile",
+        "AttackDistanceRange": [
+          0,
+          50
+        ],
+        "Ability": {
+          "Interactions": [
+            {
+              "Type": "TriggerSpawnMarkers",
+              "MarkerType": "Explosive_Mob",
+              "Count": 2,
+              "RunTime": 0.1,
+              "Effects": {
+                "Particles": [
+                  {
+                    "SystemId": "Lightning",
+                    "TargetEntityPart": "Entity"
+                  }
+                ]
+              },
+              "Next": {
+                "Type": "Simple",
+                "RunTime": 2.0
+              }
+            }
+          ]
+        },
+        "WeightCoefficient": 1.5
+      }
+    },
+    "MinRunUtility": 0.5
+  }
+}
