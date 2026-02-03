@@ -14,6 +14,7 @@ Either go through the dungeon straight ahead or teleport straight to the boss wi
 Recommended for at least 2 players!
 
 Credits:
+
 Adathan - NPC Abilities and Logic, Dungeon Design/Building, Code, VFX
 
 AVeryAngryGardenGnome - Modeling, Texturing, Animations, Character Design
