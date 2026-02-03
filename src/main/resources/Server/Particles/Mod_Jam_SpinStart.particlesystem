@@ -1,0 +1,24 @@
+{
+  "Spawners": [
+    {
+      "SpawnerId": "Mod_Jam_SpinStart_Spark"
+    },
+    {
+      "SpawnerId": "Mod_Jam_SpinStart_Core"
+    },
+    {
+      "SpawnerId": "Mod_Jam_SpinStart_Glow",
+      "PositionOffset": {
+        "X": 0.0
+      }
+    },
+    {
+      "SpawnerId": "Mod_Jam_SpinStart_Circles2"
+    },
+    {
+      "SpawnerId": "Mod_Jam_SpinStart_SparksStart"
+    }
+  ],
+  "CullDistance": 100.0,
+  "IsImportant": false
+}

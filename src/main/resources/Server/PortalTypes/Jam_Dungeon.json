@@ -1,0 +1,18 @@
+{
+  "InstanceId": "Jam_Dungeon",
+  "Description": {
+    "DisplayName": "Jam_Dungeon.portals.dungeon",
+    "FlavorText": "Jam_Dungeon.portals.dungeon.description",
+    "ThemeColor": "#837504",
+    "SplashImage": "SteamwroughtTomb.png",
+    "Tips": [
+      "Jam_Dungeon.portals.dungeon.tip1",
+      "Jam_Dungeon.portals.dungeon.tip2",
+      "Jam_Dungeon.portals.dungeon.tip3",
+      "Jam_Dungeon.portals.dungeon.tip4",
+      "Jam_Dungeon.portals.dungeon.tip5",
+      "Jam_Dungeon.portals.dungeon.tip6"
+    ]
+  },
+  "GameplayConfig": "Config_Jam_Dungeon"
+}

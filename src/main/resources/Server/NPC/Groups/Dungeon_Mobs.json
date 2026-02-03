@@ -1,0 +1,8 @@
+{
+  "IncludeRoles": [
+    "*Pylon*",
+    "*Explosive_Mob*",
+    "*Jam_Boss*",
+    "NPC_Pylon"
+  ]
+}

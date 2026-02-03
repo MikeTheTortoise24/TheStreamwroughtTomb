@@ -1,0 +1,46 @@
+{
+  "Spawners": [
+    {
+      "SpawnerId": "Jam_Boss_Spin"
+    },
+    {
+      "SpawnerId": "Jam_Boss_Spin"
+    },
+    {
+      "SpawnerId": "Jam_Boss_Spin_Soft"
+    },
+    {
+      "SpawnerId": "Jam_Boss_Spin_Sparks",
+      "FixedRotation": false
+    },
+    {
+      "SpawnerId": "Steam_Smoke",
+      "PositionOffset": {
+        "Y": -2.0
+      }
+    },
+    {
+      "SpawnerId": "Smoke_Thick",
+      "PositionOffset": {
+        "Y": -2.0
+      }
+    },
+    {
+      "SpawnerId": "Steam_Smoke",
+      "PositionOffset": {
+        "Y": -1
+      }
+    },
+    {
+      "SpawnerId": "Smoke_Thick",
+      "PositionOffset": {
+        "Y": -1
+      }
+    },
+    {
+      "SpawnerId": "Smoke_Mist"
+    }
+  ],
+  "BoundingRadius": 10,
+  "IsImportant": false
+}

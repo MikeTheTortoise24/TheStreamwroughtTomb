@@ -1,0 +1,33 @@
+{
+  "CullDistance": 100.0,
+  "IsImportant": false,
+  "Spawners": [
+    {
+      "SpawnerId": "Steam_Smoke",
+      "PositionOffset": {
+        "Y": -2.0
+      }
+    },
+    {
+      "SpawnerId": "Smoke_Thick",
+      "PositionOffset": {
+        "Y": -2.0
+      }
+    },
+    {
+      "SpawnerId": "Steam_Smoke",
+      "PositionOffset": {
+        "Y": -1
+      }
+    },
+    {
+      "SpawnerId": "Smoke_Thick",
+      "PositionOffset": {
+        "Y": -1
+      }
+    },
+    {
+      "SpawnerId": "Smoke_Mist"
+    }
+  ]
+}

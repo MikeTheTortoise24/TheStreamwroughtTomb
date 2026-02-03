@@ -1,0 +1,18 @@
+{
+  "Spawners": [
+    {
+      "SpawnerId": "Outer_Circle_AOE",
+      "PositionOffset": {
+        "Y": 0.25
+      }
+    },
+    {
+      "SpawnerId": "Slam_Ring_Twice_As_Big"
+    },
+    {
+      "SpawnerId": "Outer_Ring"
+    }
+  ],
+  "BoundingRadius": 100,
+  "IsImportant": true
+}

@@ -1,0 +1,15 @@
+{
+  "Spawners": [
+    {
+      "SpawnerId": "Slam_AoE_Floor"
+    },
+    {
+      "SpawnerId": "Slam_AoE_Circle"
+    },
+    {
+      "SpawnerId": "Slam_Ring"
+    }
+  ],
+  "BoundingRadius": 100,
+  "IsImportant": true
+}
